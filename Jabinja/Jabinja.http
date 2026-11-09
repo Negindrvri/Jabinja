@@ -1,0 +1,6 @@
+@Jabinja_HostAddress = http://localhost:5085
+
+GET {{Jabinja_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
