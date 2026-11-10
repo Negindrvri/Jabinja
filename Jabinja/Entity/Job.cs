@@ -11,4 +11,7 @@ public class Job:BaseEntity
 
     public long CompanyId { get; set; }
     public Company Company { get; set; } = null!;
+
+    public long JobCategoryId { get; set; }
+    public JobCategory JobCategory { get; set; } = null!;
 }

@@ -1,10 +1,10 @@
-﻿namespace Jabinja.Entity;
+﻿namespace Jabinja.Dto.Employer;
 
-public class JobSkeer:User
+public class GetEmployerRequestDto
 {
+    public int Id { get; set; }
     public string FirstName { get; set; } = null!;
     public string LastName { get; set; } = null!;
-    public int BirthDay { get; set; }
 
 
 }
