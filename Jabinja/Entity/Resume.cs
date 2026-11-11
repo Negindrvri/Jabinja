@@ -9,6 +9,8 @@ public class Resume:BaseEntity
     public string? Gender {  get; set; }
     public string? City { get; set; } 
     public string? Street { get; set; } 
-    public int? PostalCode { get; set; } 
+    public int? PostalCode { get; set; }
+    public JobSeeker JobSeeker { get; set; } = null!;
+    public int JobSeekerId { get; set; }
 
 }

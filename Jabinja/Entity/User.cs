@@ -8,6 +8,6 @@ public class User:BaseEntity
     public string Position { get; set; }=null!;
     public Employer? Employer { get; set; } 
     public JobSeeker? JobSeeker { get; set; }
-    public List<Resume> Resumes = new List<Resume>();
+    public List<Resume> Resumes  { get; set; } = new();
 
 }

@@ -6,6 +6,5 @@ public class Company : BaseEntity
     public string Description { get; set; } = null!;
     public string Website { get; set; } = null!;
     public string LogoUrl { get; set; } = null!;
-    public CompanyAddress? CompanyAddress { get; set; }
-    public List<CompanyAddress> Addresses = new List<CompanyAddress>();
+    public List<CompanyAddress> Addresses { get; set; } = new List<CompanyAddress>();
 }
