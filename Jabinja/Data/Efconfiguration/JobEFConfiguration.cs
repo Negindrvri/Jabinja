@@ -12,7 +12,6 @@ public class JobEFConfiguration
     {
         builder.ToTable("Job");
 
-        builder.HasKey(x => x.Id);
 
         builder.Property(x=>x.Title)
             .IsRequired() 

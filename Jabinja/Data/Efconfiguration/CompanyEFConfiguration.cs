@@ -11,7 +11,7 @@ public class CompanyEFConfiguration
     {
         builder.ToTable("Company");
 
-        builder.HasKey(x => x.Id);
+     
 
         builder.Property(x => x.Name)
             .IsRequired()
@@ -31,10 +31,7 @@ public class CompanyEFConfiguration
             .HasMaxLength(500)
             ;
 
-        builder.HasMany(x => x.Addresses)
-            .WithOne()
-            .IsRequired();
-
+   
 
     }
 }

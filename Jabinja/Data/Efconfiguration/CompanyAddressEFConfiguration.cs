@@ -11,7 +11,7 @@ public class CompanyAddressEFConfiguration
     {
         builder.ToTable("CompanyAddress");
 
-        builder.HasKey(x => x.Id);
+      
 
         builder.Property(x => x.City)
             .IsRequired()
@@ -28,10 +28,16 @@ public class CompanyAddressEFConfiguration
                   .HasMaxLength(20);
 
 
-        builder.HasOne(x => x.Company)
-                   .WithMany(x => x.Addresses)
-                   .HasForeignKey(x => x.CompanyId)
-                   .IsRequired();
+        //builder.HasOne(x => x.Company)
+        //           .WithMany(x => x.Addresses)
+        //           .HasForeignKey(x => x.CompanyId)
+        //           .IsRequired();
 
+
+        builder.HasOne(x => x.Company)
+    .WithMany(x => x.Addresses)
+    .HasForeignKey(x => x.CompanyId)
+    .OnDelete(DeleteBehavior.NoAction)
+    .IsRequired();
     }
 }

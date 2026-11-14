@@ -10,7 +10,7 @@ public class JobSkeerEntityConfiguration
     public void Configure(EntityTypeBuilder<JobSeeker> builder)
     {
         builder.ToTable("JobSkeer");
-        builder.HasKey(x => x.Id);
+        
 
         builder.Property(x => x.FirstName)
             .IsRequired()

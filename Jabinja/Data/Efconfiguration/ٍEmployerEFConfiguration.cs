@@ -11,7 +11,6 @@ public class _ٍEmployerEFConfiguration
     {
         builder.ToTable("Employer");
 
-        builder.HasKey(x => x.Id);
 
         builder.Property(x => x.FirstName)
             .IsRequired()
